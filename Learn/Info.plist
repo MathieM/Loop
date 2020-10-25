@@ -19,7 +19,11 @@
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleShortVersionString</key>
+<<<<<<< HEAD
 	<string>2.2.1-spike</string>
+=======
+	<string>2.2.4</string>
+>>>>>>> 0ec8af8111da4d7e7a929fdf61322e723fc6033f
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>LSRequiresIPhoneOS</key>

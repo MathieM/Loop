@@ -74,3 +74,6 @@ Loop.xcworkspace
 # Avoid checking in built assets
 Loop/DerivedAssets.xcassets/
 WatchApp/DerivedAssets.xcassets/
+
+# Build log
+*xcodebuild.log
