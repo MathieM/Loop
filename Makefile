@@ -38,7 +38,7 @@ test:
 ## 
 
 pre-travis: 
-	- $(eval XCPRETTY_TRAVIS := $(XCPRETTY_TRAVIS))
+	- $(eval XCPRETTY := $(XCPRETTY_TRAVIS))
 
 travis: # Build and test the app target like travis
 travis: pre-travis travis-build travis-test

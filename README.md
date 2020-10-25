@@ -2,7 +2,7 @@
 
 ![App Icon](/Loop/DefaultAssets.xcassets/AppIcon.appiconset/Icon-Small-40%402x.png?raw=true)
 
-[![Build Status](https://travis-ci.org/MathieM/Loop.svg?branch=spike-master)](https://travis-ci.org/MathieM/Loop)
+[![Build Status](https://travis-ci.org/MathieM/Loop.svg?branch=spike-master-ok-rebased)](https://travis-ci.org/MathieM/Loop)
 [![Join the chat at https://loop.zulipchat.com](https://img.shields.io/badge/zulip-join_chat-brightgreen.svg)](https://loop.zulipchat.com)
 
 Loop is an app template for building an automated insulin delivery system. It is a stone resting on the boulders of work done by many others.
