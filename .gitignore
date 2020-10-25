@@ -75,5 +75,6 @@ Loop.xcworkspace
 Loop/DerivedAssets.xcassets/
 WatchApp/DerivedAssets.xcassets/
 
-# Build log
+# Build
 *xcodebuild.log
+build
