@@ -12,6 +12,6 @@ addons:
 before_script:
     - git config --global protocol.version 1
     - gem install xcpretty xcpretty-travis-formatter --quiet
-    - make travis before
+    - make travis-before
 script:
     - make travis
