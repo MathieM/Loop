@@ -18,17 +18,17 @@ ci: build-and-test
 
 cartage: # Cartage script
 cartage: 
-	- $(XCODEBUILD) -target Cartfile  | tee cartfile-xcodebuild.log $(XCPRETTY) $(ARGS)
+	- $(XCODEBUILD) -target Cartfile $(XCPRETTY) $(ARGS)
 
 build: # Build the app target
 build: 
-	- $(XCODEBUILD) -scheme Loop build CODE_SIGN_IDENTITY="" CODE_SIGNING_ALLOWED=NO  | tee loop-build-xcodebuild.log $(XCPRETTY) $(ARGS)
-	- $(XCODEBUILD) -scheme Learn build CODE_SIGN_IDENTITY="" CODE_SIGNING_ALLOWED=NO  | tee learn-build-xcodebuild.log $(XCPRETTY) $(ARGS)
+	- $(XCODEBUILD) -scheme Loop build CODE_SIGN_IDENTITY="" CODE_SIGNING_ALLOWED=NO $(XCPRETTY) $(ARGS)
+	- $(XCODEBUILD) -scheme Learn build CODE_SIGN_IDENTITY="" CODE_SIGNING_ALLOWED=NO $(XCPRETTY) $(ARGS)
 
 test: # Run the test target
 test: 
-	- $(XCODEBUILD) -scheme LoopTests -destination 'name=iPhone 8' test  | tee loop-test-xcodebuild.log $(XCPRETTY) $(ARGS)
-	- $(XCODEBUILD) -scheme DoseMathTests -destination 'name=iPhone 8' test  | tee dose-math-test-xcodebuild.log $(XCPRETTY) $(ARGS) 
+	- $(XCODEBUILD) -scheme LoopTests -destination 'name=iPhone 8' test $(XCPRETTY) $(ARGS)
+	- $(XCODEBUILD) -scheme DoseMathTests -destination 'name=iPhone 8' test $(XCPRETTY) $(ARGS) 
 
 .PHONY: build-and-test ci cartage build test
 
